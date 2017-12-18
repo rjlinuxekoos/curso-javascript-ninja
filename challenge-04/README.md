@@ -116,7 +116,7 @@ citado acima, no lugar de "pessoas".
 carro.addPessoas = function(qtdPassageiros){
 	var palavraPessoas = ' pessoas';
 
-	if (carro.quantidadePessoas === carro.assentos) {
+	if ((carro.quantidadePessoas === carro.assentos) && ((carro.quantidadePessoas + qtdPassageiros) > carro.assentos)) {
 		return 'O carro já está lotado!';
 	}
 	if ((carro.assentos > carro.quantidadePessoas) && 
